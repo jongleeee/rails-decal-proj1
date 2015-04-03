@@ -8,10 +8,11 @@
 
 # Make Pokemon
 %w(Squirtle Charmander Bulbasaur Pikachu).each do |name|
-  Pokemon.create name: name, level: rand(1..20)
+  Pokemon.create name: name, level: rand(1..20), health: 100
 end
 
 # Make other trainers
 %w(Ash Gary Misty Brock).each do |name|
   Trainer.create name: name, email: name+"@pokeportal.com", password: 'password'
+
 end
